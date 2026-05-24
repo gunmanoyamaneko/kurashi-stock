@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ナフサ不足で品薄・値上がりしやすい日用品・商品リスト。今のうちにAmazonで備蓄しておきたいものをカテゴリ別にまとめました。" />
+  <meta property="og:title" content="ナフサ不足で消える！？買っておくべき日用品リスト【2026年最新】" />
+  <meta property="og:description" content="ゴミ袋・ラップ・PETボトルなど、ナフサ不足の影響を受けやすい商品を今すぐチェック。" />
+  <meta property="og:type" content="website" />
+  <title>ナフサ不足で消える！？買っておくべき日用品リスト【2026年最新】</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #111827;
+      --ink-soft: #374151;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --paper: #ffffff;
+      --bg: #f3f4f6;
+      --night: #0b1220;
+      --danger: #dc2626;
+      --warning: #d97706;
+      --watch: #b45309;
+      --safe: #047857;
+      --amazon: #f59e0b;
+      --rakuten: #b91c1c;
+      --yahoo: #7c3aed;
+      --a8: #0f766e;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --radius: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background:
+        linear-gradient(180deg, rgba(17, 24, 39, 0.04), transparent 280px),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    header {
+      position: relative;
+      min-height: 560px;
+      color: white;
+      overflow: hidden;
+      background: var(--night);
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(8, 13, 24, 0.94) 0%, rgba(8, 13, 24, 0.78) 42%, rgba(8, 13, 24, 0.28) 100%),
+        linear-gradient(180deg, rgba(8, 13, 24, 0.15), rgba(8, 13, 24, 0.85)),
+        url("assets/naphtha-hero.png") center right / cover no-repeat;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 180px;
+      background: linear-gradient(180deg, transparent, var(--bg));
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1120px;
+      min-height: 560px;
+      margin: 0 auto;
+      padding: 72px 20px 118px;
+      display: grid;
+      align-content: center;
+    }
+    header .badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      border: 1px solid rgba(251, 191, 36, 0.55);
+      background: rgba(251, 191, 36, 0.13);
+      color: #fde68a;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      margin-bottom: 22px;
+    }
+    header h1 {
+      max-width: 760px;
+      font-size: clamp(34px, 7vw, 76px);
+      font-weight: 900;
+      line-height: 1.02;
+      letter-spacing: 0;
+      margin-bottom: 22px;
+    }
+    .nowrap { white-space: nowrap; }
+    header p {
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(15px, 2vw, 18px);
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .updated,
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.78);
+      padding: 6px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 999px;
+      backdrop-filter: blur(14px);
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1120px;
+      margin: -72px auto 0;
+      padding: 0 20px 72px;
+    }
+
+    .top-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    .ad-disclosure {
+      margin-bottom: 34px;
+      padding: 12px 14px;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      background: #fffbeb;
+      color: #78350f;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+    .partner-cta {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: center;
+      margin: 0 0 36px;
+      padding: 20px;
+      border: 1px solid #ccfbf1;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #f0fdfa, #ffffff);
+      box-shadow: 0 8px 26px rgba(15, 118, 110, 0.08);
+    }
+    .partner-cta strong {
+      display: block;
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    .partner-cta span {
+      display: block;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .partner-cta .a8-btn {
+      min-width: 190px;
+      padding: 0 18px;
+    }
+    .alert-banner,
+    .info-box,
+    .checklist {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(229, 231, 235, 0.94);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .alert-banner {
+      padding: 20px;
+      border-top: 4px solid var(--warning);
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+    .alert-banner strong { color: var(--ink); }
+    .info-box {
+      padding: 24px;
+    }
+    .info-box h2 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      letter-spacing: 0;
+    }
+    .info-box p {
+      color: var(--ink-soft);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .info-box p:last-child { margin-bottom: 0; }
+    .signal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .signal {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 13px;
+      background: #f9fafb;
+    }
+    .signal strong {
+      display: block;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .signal span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 38px 0 16px;
+      font-size: clamp(19px, 3vw, 27px);
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(17, 24, 39, 0.2), transparent);
+    }
+
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .item-card {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 12px;
+      min-height: 248px;
+      background: var(--paper);
+      border: 1px solid rgba(229, 231, 235, 0.95);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      overflow: hidden;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+    .item-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--watch);
+      z-index: -1;
+    }
+    .item-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(17, 24, 39, 0.18);
+      box-shadow: 0 16px 42px rgba(15, 23, 42, 0.12);
+    }
+    .item-card:has(.urgency-high)::before { background: var(--danger); }
+    .item-card:has(.urgency-medium)::before { background: var(--warning); }
+    .item-card:has(.urgency-low)::before { background: #ca8a04; }
+
+    .item-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .item-emoji {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #f3f4f6;
+      font-size: 23px;
+      flex: 0 0 auto;
+    }
+    .item-name {
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .urgency-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      border-radius: 999px;
+      padding: 5px 11px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+    .urgency-high   { background: #fef2f2; color: var(--danger); }
+    .urgency-medium { background: #fff7ed; color: var(--warning); }
+    .urgency-low    { background: #fefce8; color: #a16207; }
+
+    .item-desc {
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .btn-group {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .amazon-btn,
+    .rakuten-btn,
+    .yahoo-btn,
+    .a8-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 42px;
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+      border-radius: 7px;
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+    .amazon-btn { background: var(--amazon); }
+    .rakuten-btn { background: var(--rakuten); }
+    .yahoo-btn { background: var(--yahoo); }
+    .a8-btn { background: var(--a8); }
+    .amazon-btn:hover,
+    .rakuten-btn:hover,
+    .yahoo-btn:hover,
+    .a8-btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(0.94);
+    }
+    .amazon-btn svg { display: none; }
+
+    .checklist {
+      padding: 24px;
+      margin-top: 42px;
+      border-top: 4px solid var(--safe);
+    }
+    .checklist h3 {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .checklist ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 10px;
+    }
+    .checklist ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+      padding: 8px 10px;
+      background: #f9fafb;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      font-size: 14px;
+    }
+    .checklist ul li::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--safe);
+      border-radius: 4px;
+      flex: 0 0 auto;
+    }
+
+    .disclaimer {
+      max-width: 820px;
+      margin: 44px auto 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 11px;
+      line-height: 1.9;
+    }
+
+    footer {
+      background: var(--night);
+      color: rgba(255,255,255,0.56);
+      text-align: center;
+      padding: 26px 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 860px) {
+      header { min-height: 620px; }
+      header::before {
+        background:
+          linear-gradient(180deg, rgba(8, 13, 24, 0.9) 0%, rgba(8, 13, 24, 0.68) 58%, rgba(8, 13, 24, 0.82) 100%),
+          url("assets/naphtha-hero.png") center / cover no-repeat;
+      }
+      .hero-inner {
+        min-height: 620px;
+        padding-top: 56px;
+        align-content: end;
+      }
+      .container { margin-top: -56px; }
+      .top-panel,
+      .partner-cta,
+      .item-grid {
+        grid-template-columns: 1fr;
+      }
+      .partner-cta .a8-btn { width: 100%; }
+    }
+
+    @media (max-width: 520px) {
+      .hero-inner { padding-left: 16px; padding-right: 16px; }
+      .container { padding-left: 14px; padding-right: 14px; }
+      header h1 { font-size: 36px; }
+      .signal-grid,
+      .btn-group {
+        grid-template-columns: 1fr;
+      }
+      .item-card { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero-inner">
+    <div class="badge">Supply Watch / 2026年5月</div>
+    <h1>ナフサ不足に備える<br><span class="nowrap">日用品リスト</span></h1>
+    <p>ゴミ袋、ラップ、PETボトル、洗剤容器。石油化学原料の供給不安が暮らしの消耗品に波及する前に、必要なものだけを冷静に確認できます。</p>
+    <div class="hero-meta">
+      <div class="updated">最終更新：2026年5月25日</div>
+      <div class="hero-chip">14品目を緊急度別に整理</div>
+      <div class="hero-chip">Amazon / 楽天 / Yahoo / A8 対応</div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="top-panel">
+    <div class="info-box">
+      <h2>ナフサ不足とは？</h2>
+      <p>ナフサは石油を精製して得られる原料で、プラスチック・合成繊維・合成ゴムなどの製造に欠かせません。日本はナフサの約74%を中東から輸入しており、2026年2月以降の中東情勢悪化により供給が逼迫しています。</p>
+      <p>国内12か所あるエチレン製造設備のうち、稼働を落としているのが6か所。ナフサには国家備蓄制度がなく、民間在庫はわずか約20日分とされています。</p>
+      <div class="signal-grid">
+        <div class="signal">
+          <strong>74%</strong>
+          <span>日本の中東依存比率</span>
+        </div>
+        <div class="signal">
+          <strong>6/12</strong>
+          <span>稼働低下中の設備</span>
+        </div>
+        <div class="signal">
+          <strong>20日</strong>
+          <span>民間在庫の目安</span>
+        </div>
+      </div>
+    </div>
+    <div class="alert-banner">
+      <strong>パニック買いではなく、消耗品の棚卸しを。</strong><br>
+      まずは家庭で1〜2か月以内に確実に使うものを確認し、足りない分だけ補充するのがおすすめです。
+    </div>
+  </div>
+
+  <div class="ad-disclosure">
+    広告・アフィリエイトリンクを含みます。Amazonアソシエイト、楽天アフィリエイト、もしもアフィリエイト、A8.net等のリンクから購入された場合、運営者に紹介料が支払われることがあります。
+    <img src="https://i.moshimo.com/af/i/impression?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142" width="1" height="1" style="border:none;" loading="lazy" alt="">
+  </div>
+
+  <div class="partner-cta">
+    <div>
+      <strong>まとめて備えるなら、防災・備蓄セットも確認</strong>
+      <span>日用品を個別にそろえる前に、保存水・衛生用品・非常食などをまとめて比較できます。</span>
+    </div>
+    <a class="a8-btn" href="https://px.a8.net/svt/ejp?a8mat=4B3YV5+90H9GY+3ZK2+5Z6WX" target="_blank" rel="nofollow noopener sponsored">備蓄セットを見る</a>
+  </div>
+
+  <!-- 緊急度：高 -->
+  <div class="section-title">🔴 緊急度：高（すでに品薄・値上がり中）</div>
+  <div class="item-grid">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🗑️</span>
+        <span class="item-name">ゴミ袋・ポリ袋</span>
+      </div>
+      <span class="urgency-badge urgency-high">🔴 品薄進行中</span>
+      <p class="item-desc">全国的に指定ゴミ袋が品薄に。ポリエチレン製のため直接影響を受けやすい。まとめ買い推奨。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=ゴミ袋+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fゴミ袋+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%82%B4%E3%83%9F%E8%A2%8B%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🧻</span>
+        <span class="item-name">食品用ラップフィルム</span>
+      </div>
+      <span class="urgency-badge urgency-high">🔴 品薄進行中</span>
+      <p class="item-desc">ポリ塩化ビニリデン（PVDC）・ポリエチレン製。製造コスト上昇で値上がりが先行。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=食品用ラップ+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F食品用ラップ+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E9%A3%9F%E5%93%81%E7%94%A8%E3%83%A9%E3%83%83%E3%83%97%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🧤</span>
+        <span class="item-name">使い捨てゴム手袋</span>
+      </div>
+      <span class="urgency-badge urgency-high">🔴 医療用で優先配分</span>
+      <p class="item-desc">医療・介護現場で優先供給されており、家庭用・業務用は入手困難になりつつある。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=使い捨てゴム手袋&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F使い捨てゴム手袋%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6%E3%82%B4%E3%83%A0%E6%89%8B%E8%A2%8B" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🎨</span>
+        <span class="item-name">塗料用シンナー</span>
+      </div>
+      <span class="urgency-badge urgency-high">🔴 価格75%上昇</span>
+      <p class="item-desc">DIY・業務用ともに価格が急騰。ナフサを直接原料とするため最も影響を受けやすい製品のひとつ。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=塗料用シンナー&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F塗料用シンナー%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E5%A1%97%E6%96%99%E7%94%A8%E3%82%B7%E3%83%B3%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 緊急度：中 -->
+  <div class="section-title">🟠 緊急度：中（値上がり・品薄の兆候あり）</div>
+  <div class="item-grid">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🧴</span>
+        <span class="item-name">洗剤・シャンプーボトル</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 値上がり傾向</span>
+      <p class="item-desc">ポリプロピレン製容器のコストが上昇。詰め替え用を多めに確保しておくと経済的。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=洗剤+詰め替え+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F洗剤+詰め替え+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E6%B4%97%E5%89%A4%2B%E8%A9%B0%E3%82%81%E6%9B%BF%E3%81%88%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🥤</span>
+        <span class="item-name">PETボトル飲料</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 容器コスト上昇</span>
+      <p class="item-desc">PETはナフサ由来のテレフタル酸・エチレングリコールが原料。メーカーが値上げを予告している。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=ミネラルウォーター+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fミネラルウォーター+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%83%9F%E3%83%8D%E3%83%A9%E3%83%AB%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🧼</span>
+        <span class="item-name">ハンドソープ・ボディソープ</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 値上がり傾向</span>
+      <p class="item-desc">界面活性剤（合成洗剤成分）はナフサ由来。容器のプラスチックコストも上昇中。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=ハンドソープ+詰め替え+大容量&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fハンドソープ+詰め替え+大容量%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%83%8F%E3%83%B3%E3%83%89%E3%82%BD%E3%83%BC%E3%83%97%2B%E8%A9%B0%E3%82%81%E6%9B%BF%E3%81%88%2B%E5%A4%A7%E5%AE%B9%E9%87%8F" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🩹</span>
+        <span class="item-name">絆創膏・医療用テープ</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 医療向け優先</span>
+      <p class="item-desc">医療・介護分野が優先供給されているため、家庭用の流通量が減少する可能性がある。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=絆創膏+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F絆創膏+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E7%B5%86%E5%89%B5%E8%86%8F%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">📦</span>
+        <span class="item-name">セロハンテープ</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 値上がり傾向</span>
+      <p class="item-desc">粘着剤・フィルムともにナフサ由来。事務用・梱包用ともに値上がりが見込まれる。まとめ買いがお得。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=セロハンテープ+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fセロハンテープ+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%82%BB%E3%83%AD%E3%83%8F%E3%83%B3%E3%83%86%E3%83%BC%E3%83%97%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🍱</span>
+        <span class="item-name">ジッパー付き保存袋</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 値上がり傾向</span>
+      <p class="item-desc">ポリエチレン製。食品の冷凍・保存に欠かせないため需要が高く、価格上昇が続く見通し。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=ジッパーバッグ+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fジッパーバッグ+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%82%B8%E3%83%83%E3%83%91%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🚿</span>
+        <span class="item-name">シャンプー・コンディショナー</span>
+      </div>
+      <span class="urgency-badge urgency-medium">🟠 値上がり傾向</span>
+      <p class="item-desc">容器（PP/PE）・成分（界面活性剤）ともにナフサ由来。詰め替え用の大容量タイプが割安。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=シャンプー+詰め替え+大容量&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fシャンプー+詰め替え+大容量%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC%2B%E8%A9%B0%E3%82%81%E6%9B%BF%E3%81%88%2B%E5%A4%A7%E5%AE%B9%E9%87%8F" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 緊急度：低 -->
+  <div class="section-title">🟡 緊急度：低（中長期的に注意）</div>
+  <div class="item-grid">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🧽</span>
+        <span class="item-name">スポンジ・タワシ</span>
+      </div>
+      <span class="urgency-badge urgency-low">🟡 中長期的に注意</span>
+      <p class="item-desc">ポリウレタン・ナイロン製品はナフサ由来。現状は供給されているが中長期的に値上がりの懸念。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=食器用スポンジ+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F食器用スポンジ+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E9%A3%9F%E5%99%A8%E7%94%A8%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B8%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">✏️</span>
+        <span class="item-name">文房具（ボールペン・定規）</span>
+      </div>
+      <span class="urgency-badge urgency-low">🟡 中長期的に注意</span>
+      <p class="item-desc">プラスチック部品・インク溶剤がナフサ由来。在庫は潤沢だが補充時に値上がりが見込まれる。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=ボールペン+まとめ買い&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fボールペン+まとめ買い%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3%2B%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-emoji">🪣</span>
+        <span class="item-name">洗濯洗剤（液体）</span>
+      </div>
+      <span class="urgency-badge urgency-low">🟡 中長期的に注意</span>
+      <p class="item-desc">界面活性剤の原料がナフサ由来。大容量の詰め替えパックを選ぶと今のうちはお得。</p>
+      <div class="btn-group">
+        <a class="amazon-btn" href="https://www.amazon.co.jp/s?k=洗濯洗剤+大容量+詰め替え&tag=gunmanoyamane-22" target="_blank" rel="nofollow noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1-3.2 1.5-5 1.5s-3.5-.5-5-1.5c-.2-.1-.1-.4.1-.3 1.4.6 2.9 1 4.5 1s3.1-.4 4.4-1c.3-.1.3.2.0.3zm1.1-1.7c-.2-.3-.8-.2-1.1 0-1.2.9-3 1.2-4.5 1.2-1.7 0-3.3-.4-4.5-1.2-.3-.2-.9-.3-1.1 0-.2.2-.1.6.2.8 1.4 1 3.2 1.5 5.4 1.5s4-.5 5.4-1.5c.3-.2.4-.6.2-.8z"/></svg>
+          Amazonで見る
+        </a>
+        <a class="rakuten-btn" href="https://hb.afl.rakuten.co.jp/hgc/53fb42de.4111c46c.53fb42df.111726b0/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F洗濯洗剤+大容量+詰め替え%2F" target="_blank" rel="nofollow noopener">🛒 楽天で見る</a>
+        <a class="yahoo-btn" href="https://af.moshimo.com/af/c/click?a_id=5584361&p_id=1225&pc_id=1925&pl_id=19142&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%E6%B4%97%E6%BF%AF%E6%B4%97%E5%89%A4%2B%E5%A4%A7%E5%AE%B9%E9%87%8F%2B%E8%A9%B0%E3%82%81%E6%9B%BF%E3%81%88" target="_blank" rel="nofollow noopener sponsored" referrerpolicy="no-referrer-when-downgrade">Yahoo!で探す</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 備蓄チェックリスト -->
+  <div class="checklist">
+    <h3>✅ 備蓄チェックリスト</h3>
+    <ul>
+      <li>ゴミ袋（大・中・小）</li>
+      <li>食品用ラップ</li>
+      <li>ジッパー付き保存袋</li>
+      <li>使い捨て手袋</li>
+      <li>洗剤詰め替え用</li>
+      <li>シャンプー詰め替え用</li>
+      <li>ハンドソープ詰め替え</li>
+      <li>絆創膏・医療テープ</li>
+      <li>セロハンテープ</li>
+      <li>ボールペン</li>
+      <li>スポンジ</li>
+    </ul>
+    <div style="margin-top: 16px;">
+      <a class="a8-btn" href="https://px.a8.net/svt/ejp?a8mat=4B3YV5+90H9GY+3ZK2+5Z6WX" target="_blank" rel="nofollow noopener sponsored">足りない備蓄をまとめて確認</a>
+    </div>
+  </div>
+
+  <p class="disclaimer">
+    ※ 本サイトはAmazonアソシエイト・楽天アフィリエイト・もしもアフィリエイト・A8.net等のアフィリエイトプログラムに参加しています。<br>
+    商品リンクから購入された場合、サイト運営者に紹介料が支払われることがあります。<br>
+    ※ 商品の在庫・価格はAmazonの表示をご確認ください。パニック買いは控え、必要な分のみ購入してください。<br>
+    ※ 情報は2026年5月時点のものです。状況は随時変化します。
+  </p>
+
+</div>
+
+<footer>
+  © 2026 ナフサ不足対策サイト | Amazonアソシエイト・楽天アフィリエイト参加サイト
+</footer>
+
+</body>
+</html>
