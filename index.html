@@ -8,6 +8,14 @@
   <meta property="og:description" content="ゴミ袋・ラップ・PETボトルなど、ナフサ不足の影響を受けやすい商品を今すぐチェック。" />
   <meta property="og:type" content="website" />
   <title>ナフサ不足で消える！？買っておくべき日用品リスト【2026年最新】</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FMSXQNNEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9FMSXQNNEN');
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -796,6 +804,24 @@
 <footer>
   © 2026 ナフサ不足対策サイト | Amazonアソシエイト・楽天アフィリエイト参加サイト
 </footer>
+
+<script>
+  document.querySelectorAll('.amazon-btn, .rakuten-btn, .yahoo-btn, .a8-btn').forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof gtag !== 'function') return;
+      var label = 'other';
+      if (link.classList.contains('amazon-btn')) label = 'amazon';
+      if (link.classList.contains('rakuten-btn')) label = 'rakuten';
+      if (link.classList.contains('yahoo-btn')) label = 'yahoo';
+      if (link.classList.contains('a8-btn')) label = 'a8';
+      gtag('event', 'affiliate_click', {
+        affiliate_network: label,
+        link_text: link.textContent.trim(),
+        link_url: link.href
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
